@@ -17,14 +17,37 @@
           <a class="nav-link" href="#" style="color: white;"> Donna</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: white;"> Bambino</a>
+          <a class="nav-link" href="#" style="color: white;"> Bambini</a>
         </li>
-
       </ul>
     </div>
   </div>
 </nav>
 </header>
+
+
+<ngb-carousel *ngIf="images">
+	<ng-template ngbSlide *ngFor="let image of images ">
+		<div class="picsum-img-wrapper">
+			<img [src]="percorso + image.id + '.jpg' " [alt]="image.label" />
+		</div>
+		<div class="carousel-caption">
+			<h3>{{image.label}}</h3>
+		</div>
+	</ng-template>
+</ngb-carousel>
+
+
+
+<div id="main-container">
+
+  <div class="container-titolo">
+    <h2>App in Angular</h2>
+    <p class="paragrafo">My Clothing App</p>
+  </div>
+</div>
+
+
 
 <router-outlet></router-outlet>
 
