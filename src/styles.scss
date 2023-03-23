@@ -12,11 +12,15 @@ body{
 
 nav{
   margin-left: 10px;
+  li{
+    text-align: center;
+  }
+}
+nav-right{
+  margin-right: 10px;
 }
 
-#main-container{
-  padding: 16px;
-}
+
 
 html, body { height: 100%; }
 
