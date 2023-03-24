@@ -1,26 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 body{
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
-.bg-red,header{
-  background-color: rgb(142, 11, 125)!important;
+.bg-red,header,footer{
+  background-color:orchid!important;
 }
-
-nav{
-  margin-left: 10px;
-  li{
-    text-align: center;
-  }
-}
-nav-right{
-  margin-right: 10px;
-}
-
-
 
 html, body { height: 100%; }
 
