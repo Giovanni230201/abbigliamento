@@ -12,6 +12,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ProductCardComponent } from './shared/product-card/product-card.component';
 
 
 
@@ -22,7 +23,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     HomeComponent,
     HeaderComponent,
     ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

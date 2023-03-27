@@ -8,14 +8,14 @@ import { Component ,OnInit} from '@angular/core';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit{
-  prodotto: Product[];
+  prodotti: Product[];
 
   constructor(private productService: ProductService){};
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe({
       next: (response)=>{
-        this.prodotto=response;
+        this.prodotti=response;
       },
       error: (error)=>{
         console.log(error);

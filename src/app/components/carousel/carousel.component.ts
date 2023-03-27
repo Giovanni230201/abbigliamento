@@ -12,7 +12,8 @@ export class CarouselComponent {
    {id:2,
       label:'Abbigliamento donna'},
       {id:3,
-        label:'Abbigliamento bambini'}
+        label:'Abbigliamento bambini'},
+
   ];
 
   percorso="../assets/images/abbigliamento-";
