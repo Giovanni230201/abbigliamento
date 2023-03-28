@@ -1,13 +1,13 @@
-<div class="card-container" *ngFor="let prodotto of products">
+<div class="card-container" *ngFor="let product of products">
   <div class="card">
-    <div class="card-image"[ngStyle]="{'background-image': 'url(' + prodotto.image + ')'}"></div>
+    <div class="card-image"[ngStyle]="{'background-image': 'url(' + product.image + ')'}"></div>
     <div class="card-body">
-      <h5 class="card-title">{{prodotto.title}}</h5>
+      <h5 class="card-title">{{product.title}}</h5>
       <p class="card-text">
       <!--{{prodotto.description}} -->
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus praesentium, quo quisquam reprehenderit tempore nam error aut debitis repellat iste unde totam numquam. Corporis consequuntur dolore aut fugit optio!
       </p>
-      <a href="#" class="btn btn-primary">Visualizza</a>
+      <a routerLink="dettaglio/{{product.title}}/{{product._id}}" class="btn btn-primary">Visualizza</a>
     </div>
   </div>
 </div>

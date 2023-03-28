@@ -6,4 +6,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {}
+export class AppComponent {
+  title = 'abbigliamento';
+}
+

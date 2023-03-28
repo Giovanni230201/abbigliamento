@@ -13,6 +13,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { ProductCardComponent } from './shared/product-card/product-card.component';
+import { DetailComponent } from './components/products/detail/detail.component';
+import { ProductsListComponent } from './components/products/products-list/products-list.component';
 
 
 
@@ -24,7 +26,9 @@ import { ProductCardComponent } from './shared/product-card/product-card.compone
     HeaderComponent,
     ProductsComponent,
     FooterComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    DetailComponent,
+    ProductsListComponent
   ],
   imports: [
     BrowserModule,
