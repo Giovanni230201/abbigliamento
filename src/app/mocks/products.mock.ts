@@ -54,7 +54,7 @@ export const PRODUCTS: Product[]=[
     title: 'La giacca dello smoking',
     description: "Con il ritorno a un guardaroba più tradizionale, la giacca da smoking si preannuncia come il nuovo capo irrinunciabile da avere nel proprio guardaroba. Riconoscibile tra tutte con i suoi revers a punta o sciallata e ricoperta di raso nero, viene sdrammatizzata, indossata a torso nudo, oppure abbinata a una felpa con cappuccio o pantaloni casual. Viene rivisitata in forme insolite o trasformata in cappotto da Dolce & Gabbana, Emporio Armani, Fendi, Hed Mayner e Sean Suen.",
     image: 'https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/3403/9b08/24fd/986c/5082/5f29/d662/64a7/a489/8f3d/8f3d.JPG',
-    price: 78,
+    price: 780,
     published: true
   },
   {
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[]=[
     title: 'L’azzurro da banchiere',
     description: "Questo blu-azzurro tipicamente maschile, simboleggiato dalla camicia del banchiere, che oscilla tra l'azzurro e una tonalità più cinerea, ha fatto un progresso spettacolare sulle passerelle. Viene spesso proposto come total look o in piccoli tocchi su un solo capo, come una sciarpa.",
     image: 'https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/857a/6d23/6609/8b33/d6a1/9f0b/064d/f174/f412/03bf/03bf.jpg',
-    price: 52,
+    price: 522,
     published: true
   },
   {
@@ -70,7 +70,7 @@ export const PRODUCTS: Product[]=[
     title: 'Casa dolce casa',
     description: "La pandemia non è del tutto cancellata e la dimensione domestica si fa sentire in molte collezioni. Bode e Louis Vuitton hanno ricreato una vera casa sulla loro passerella. Federico Cina e Magliano hanno fatto sfilare i loro modelli con delle sedie. Da JW Anderson, stringevano forte un cuscino sotto il braccio o contro il petto. Nel guardaroba questo si traduce in cappotti con piumini o coperte, mantelle-plaid con frange e completi in piuma accoglienti e voluminosi.",
     image: 'https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/3b14/05bd/b882/e550/2727/605e/8df6/1288/363f/212e/212e.jpg',
-    price: 2,
+    price: 218,
     published: true
   },
   {

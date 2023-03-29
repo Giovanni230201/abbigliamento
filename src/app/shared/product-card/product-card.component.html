@@ -1,13 +1,13 @@
 <div class="card-container" *ngFor="let product of products">
   <div class="card">
-    <div class="card-image"[ngStyle]="{'background-image': 'url(' + product.image + ')'}"></div>
+    <div class="card-image"[ngStyle]="{'background-image': 'url(' + product.image + ')'}" (click)="inviaTitolo(product.title)"></div>
     <div class="card-body">
       <h5 class="card-title">{{product.title}}</h5>
       <p class="card-text">
-      <!--{{prodotto.description}} -->
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident temporibus praesentium, quo quisquam reprehenderit tempore nam error aut debitis repellat iste unde totam numquam. Corporis consequuntur dolore aut fugit optio!
+       {{product.description | slice: 0:250}}...
       </p>
-      <a routerLink="dettaglio/{{product.title}}/{{product._id}}" class="btn btn-primary">Visualizza</a>
+      <a routerLink="dettaglio/{{product.title}}/{{product._id}}" class="btn btn-primary" *ngIf="!pag">Visualizza</a>
+      <a routerLink="/prodotti/dettaglio/{{product.title}}/{{product._id}}" class="btn btn-primary" *ngIf="pag">Dettagli</a>
     </div>
   </div>
 </div>

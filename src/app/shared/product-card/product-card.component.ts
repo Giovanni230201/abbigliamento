@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 import { Product } from 'src/app/models/product.model';
 
 @Component({
@@ -8,4 +8,12 @@ import { Product } from 'src/app/models/product.model';
 })
 export class ProductCardComponent {
   @Input() products: Product[];
+
+  @Input() pag: string;
+
+  @Output() messaggio= new EventEmitter();
+
+  inviaTitolo(titolo: string){
+    this.messaggio.emit(titolo);
+  }
 }

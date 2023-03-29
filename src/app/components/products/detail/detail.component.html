@@ -1,10 +1,14 @@
-<div class="main-detail">
-<h3 class="title" style="text-align: center" >{{prodotto.title}}</h3>
-<p><img background [src]="prodotto.image" width="40%" style="float: left; border-color: greenyellow;border: 10%; border-radius: 20%;"></p>
-
-<div class="container-detail">
- {{prodotto.description}}
- Prezzo :  {{prodotto.price}}
-
+<div *ngIf="prodotto, else prodotto_non_trovato">
+  <img background [src]="prodotto.image" class="image">
+<div class="main-detail" >
+  <h3 class="title">{{prodotto.title}}</h3>
+ <h2 class="description">{{prodotto.description}}</h2>
+ <h2 class="prezzo">Price :  {{prodotto.price | currency: 'EUR' }}</h2>
 </div>
 </div>
+
+<ng-template #prodotto_non_trovato>
+  <div id="prodotto_non_trovato">
+    <h2>Spiacenti ma il prodotto non é piú disponibile</h2>
+  </div>
+</ng-template>

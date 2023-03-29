@@ -9,6 +9,7 @@ import { Product } from 'src/app/models/product.model';
 })
 export class ProductsListComponent implements OnInit{
   prodotti: Product[];
+  titoloProdotto: string;
 
   constructor(private productService: ProductService){};
 
@@ -21,5 +22,13 @@ export class ProductsListComponent implements OnInit{
         console.log(error);
       }
     })
+  }
+
+  riceviMessaggio(e: any){
+    if(this.titoloProdotto == e){
+      this.titoloProdotto='';
+    }else{
+      this.titoloProdotto=e;
+    }
   }
 }
