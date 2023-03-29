@@ -8,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class CarouselComponent implements OnInit{
   images=[
     {id:1,
-    label:'Abbigliamento uomo'},
+    label:''},
    {id:2,
-      label:'Abbigliamento donna'},
+      label:' '},
       {id:3,
-        label:'Abbigliamento bambini'},
+        label:' '},
+        {id:4,
+          label:' '},
+          {id:5,
+            label:' '}
 
   ];
 

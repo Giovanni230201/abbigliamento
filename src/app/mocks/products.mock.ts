@@ -78,8 +78,80 @@ export const PRODUCTS: Product[]=[
     title: ' Gli zoccoli',
     description: "Dopo l'impennata delle sneaker e la mania per gli stivali, che si sono visti su tantissime passerelle, dal modello da pioggia in gomma a quello in pelle per completare un look biker ancora molto in voga, lo zoccolo si preannuncia come il nuovo fenomeno dell'inverno 2023/24. Proposto, tra gli altri, da Kenzo, Dries Van Noten, Dhruv Kapoor ed Etro, che lo ricopre di feltro e lo decora con borchie dorate.",
     image: 'https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/7bbc/d44e/c541/0135/b8b0/d94d/10ef/f544/d962/4747/4747.jpg',
-    price: 150,
+    price: 300,
     published: true
-  }
+  },
+  {
+    _id: 11,
+  title: 'Prada Autunno Inverno 2023',
+  description: "Un’asserzione del ruolo primario degli abiti. La nuova collezione di Prada uomo Autunno Inverno 2023, dal titolo Let’s Talk About Clothes, è un’esplorazione sui fondamenti della moda stessa, sul suo ruolo e significato. L’esito è una sequenza di capi che non lascia spazio a dettagli superflui. Comfort, esagerazione e intimità assecondano canoni di essenzialità e semplicità. La grande riforma avviene non nelle forme ma nel cambio di prospettiva: i volumi passano da un estremo all’altro dell’architettura sartoriale, con silhouette di volta in volta enfatizzate, amplificate o attenuate. I colli delle camicie, i cardigan e le maglie, si allungano e si accorciano mutando significato e identità con un piccolo gesto. Le proporzioni possono cambiare la percezione.x",
+  image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/49-pradauomofw23-1673985681.jpg?crop=1xw:1xh;center,top&resize=980:*',
+  price: 300,
+  published: true
+},
 
+{
+  _id: 12,
+title: 'Etro Autunno Inverno 2023',
+description: "Come casa di moda, Etro è stata costruita sulla materia fondante della moda: il tessuto. Dando il suo punto di vista sull’argomento, come esercizio di studio e omaggio alla maison milanese, Marco De Vincenzo costruisce la sua prima collezione uomo per Etro attorno alla materia. Sullo sfondo di pile di tessuti provenienti dagli archivi Etro, sfila una collezione intima, tattile, confortevole, che fonde, mescola e confonde il pubblico e il privato, il familiare e il sociale. Stampe tappezzeria, coperte come cappotti, camicie come tovaglie, tute che ricordano tende. La tattilità è fondamentale, con jacquard e intrecci che prevalgono sulle fantasie. I pezzi sono messi insieme e assemblati per stimolare sia la vista che il tatto. Un percorso creativo nato nel senso di rassicurazione offerto da una coperta di velluto jacquard, che Marco amava da bambino e il cui motivo è riprodotto su ampi cappotti e giacche di lana.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/etro-m-f23-033-1673896420.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 420,
+published: true
+},
+{
+  _id: 13,
+title: 'Fendi Autunno Inverno 2023',
+description: "Su una colonna sonora dance firmata Giorgio Moroder, da suonare in loop, sfila una collezione che è cozy + sexy + cool. La nuova visione di Silvia Venturini Fendi per la collezione uomo è un concentrato di comfort raffinato, opulenza quotidiana, ed eleganza dell'inatteso. L'Abc del guardaroba formale sartoriale, in cui primeggiano filati pregiati, come il cashmere, e abiti da lavoro, si contamina di riferimenti anni Settanta sensuali, audaci e allo stesso tempo iper-sofisticati: toghe extra soft, doppiopetto con fondi di frange, maglie monospalla trasparenti che prendono la funzione del gilet, camicie illuminate da piccole stud che si illuminano quando incontrano le luci della nightlife.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fendi-m-f23-001-1673976830.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 870 ,
+published: true
+},
+{
+  _id: 14,
+title: 'K-Way Autunno Inverno 2023',
+description: "La sala della sfilata all’interno del nuovo BasicVillage, in Via dell’Aprica 12 a Milano, si trasforma nel Café de la Paix di Parigi, location in cui, seduto sulla terrasse in una giornata di pioggia del 1965, l'imprenditore Léon-Claude Duhamel ebbe l'idea per la primissima packable rain jacket, oggi conosciuta da tutti come k-way (termine entrato ufficialmente nel dizionario italiano). Il resto è storia. E innovazione. La sfilata K-Way Autunno Inverno 2023 2024, in cui fanno incursione anche qualche look donna, è un omaggio al passato ma è proiettata sul futuro: imbottiture e volumi sperimentali incontrano materiali hi-tech ad alta performance come le lane merino con la tecnologia Loro Piana STORM SYSTEM e l'AMIABLE, tessuto sostenibile ottenuto da nylon riciclato.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/k-way-fw23-01-1673887110.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 330,
+published: true
+},
+{
+  _id: 15,
+title: 'Gucci Autunno Inverno 2023',
+description: "Una performance live della boy band Ceramic Dog capitanata dal frontman Marc Ribot fa da sfondo a uno show che sembra assemblato per loro: musicisti, cantanti, artisti della scena indie. Il noise rock del trio emula alla perfezione le energie che scaturiscono i look, beanie dopo canotta, sacca dopo giacca di pelle, tra chiari riferimenti rock, jazz e punk. Animati dalle varie personalità che li indossano, i capi esprimono una carica sensuale che vibra dalla prima all'ultima nota dello show. Gli archetipi del guardaroba maschile sono ridefiniti e ampliati dal lusso artigianale e dalla lente sovversiva dell’improvvisazione, il metodo di lavoro applicato alla costruzione di questa collezione.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gucci-m-f23-001-1673958629.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 520,
+published: true
+},
+{
+  _id: 16,
+title: 'Magliano Autunno Inverno 2023',
+description: "Una sinfonia di suoni biomeccanici dell' artista e compositrice Pan Daijing, una parete di sedie ammassate su cui il pubblico non ci si potrà sedere, mai, una location cupa e drammatica: nella nuova collezione di Magliano si avverte un'aria di conflitto. I capi si intersecano, s’intrecciano, s’annodano, si trasformano. Sono ibridi e dinamici. Lo styling è articolato, il suo risultato è sublime. Vecchie coperte militari sono trasformate in vestaglie. Giacche con asole e tasche modulabili fanno impazzire la struttura annoiata dei grandi classici. Drappeggi tempestosi riparano dal mondo esterno, giacche tropicali proteggono da ogni clima, pastelli tenebrosi le colorano. L'intimo è di mohair. L'imbottitura dei piumini è bio, ricavata dai fiori. Il lusso non è niente di più che un gesto.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/magliano-m-f23-028-1673959345.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 460 ,
+published: true
+},
+{
+  _id: 17,
+title: 'Jw Anderson Autunno Inverno 2023',
+description: "JW Anderson fa tabula rasa. Capi senza fronzoli, senza superfluo, senza nient’altro. Una collezione che vuole essere rassicurante, intima e personale, tra ricordi autentici e puerili, come un paio di Wellipets - i famosi wellingtons a forma di rana britannici, che hanno conquistato le pagine di tutti i tabloid quando la Principessa Diana li fece indossare ai suoi figli - e capisaldi del guardaroba invernale ridotti alla loro essenza e funzione: un maglione accogliente come un abbraccio, un cappotto avvolgente e sicuro, uno stivaletto chiuso da lucchetti.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/23-1673890619.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 300 ,
+published: true
+},
+{
+  _id: 18,
+title: 'Dsquared2 Autunno Inverno 2023',
+description: "Courtesy Photo Lingerie su texani, jacquard canadesi su lane merino, preppy su cowboy, baseball cap con patches, vite bassissime, cinturoni tex-mex, frange, pelle, tartan, denim rotto, distressed, con macchie di colore. I gemelli Dean e Dan Caten, in arte Dsquared2, ritornano alle origini. Sfila il geek, l'atleta, il goth, l'emo, la femme fetale: stereotipi che vengono frantumati e rimessi insieme, ognuno è libero di essere ciò che vuole, vestire come vuole, quando vuole. A vent'anni dalla prima sfilata donna - des 2003, si chiamava Star 24/7 mandata in passerella subito dopo aver disegnato i costumi per lo Stripped Tour 2003 di Cristina Aguilera - il duo canadese riscrive il suo Dna per la nuova generazione. Ed è subito #D2TEMPTATION.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dsquared2-fw23-19-1673891496.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 650,
+published: true
+},
+{
+  _id: 19,
+title: 'Iuter Autunno Inverno 2023',
+description: "In una riproduzione semi-statica della piazza, una cricca di amici, tra attitude da strada e scooter modificati, indossa la nuova collezione Autunno Inverno 2023 di Iuter, dal titolo Spirit, Un concentrato di tutto ciò che ha definito e continua a definire lo spirito del brand milanese indipendente che affonda le radici nel landscape subculturale urbano: un mix audace di consapevolezza, tecnica e incoscienza, messo a punto in vent’anni di strada e una community in continua espansione. La nuova collezione include anche collaborazioni con gli specialisti militari di Alpha Industries, i maestri italiani del tuning di Polini e la serie cult di David Lynch Twin Peaks. Fanno parte della collezione anche giacche racing in pelle con ricami e patch intarsiate, flight jacket con patch oversize e giacche in pelle con stampe di Laura Palmer. E la prima serie di capi di abbigliamento e accessori femminili.",
+image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/iuter-fw23-look11-a-1673949938.jpg?crop=1xw:1xh;center,top&resize=980:*',
+price: 510,
+published: true
+},
 ]
