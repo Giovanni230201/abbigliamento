@@ -31,4 +31,12 @@ export class ProductsListComponent implements OnInit{
       this.titoloProdotto=e;
     }
   }
+
+  listaUomo(){
+    return this.prodotti=this.prodotti.filter(_id => _id.sesso ==='uomo');
+  }
+
+  listaDonna(){
+    return this.prodotti=this.prodotti.filter(_id => _id.sesso ==='donna');
+  }
 }
