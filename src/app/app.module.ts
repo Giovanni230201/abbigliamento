@@ -15,8 +15,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ProductCardComponent } from './shared/product-card/product-card.component';
 import { DetailComponent } from './components/products/detail/detail.component';
 import { ProductsListComponent } from './components/products/products-list/products-list.component';
-
-
+import { LoginComponent } from './components/user/login/login.component';
+import { RegistrazioneComponent } from './components/user/registrazione/registrazione.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations:[
@@ -28,14 +29,18 @@ import { ProductsListComponent } from './components/products/products-list/produ
     FooterComponent,
     ProductCardComponent,
     DetailComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    LoginComponent,
+    RegistrazioneComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialExampleModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

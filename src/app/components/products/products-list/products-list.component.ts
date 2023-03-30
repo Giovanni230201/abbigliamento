@@ -1,3 +1,4 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/models/product.model';
@@ -32,11 +33,6 @@ export class ProductsListComponent implements OnInit{
     }
   }
 
-  listaUomo(){
-    return this.prodotti=this.prodotti.filter(_id => _id.sesso ==='uomo');
-  }
 
-  listaDonna(){
-    return this.prodotti=this.prodotti.filter(_id => _id.sesso ==='donna');
-  }
+
 }

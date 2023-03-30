@@ -1,0 +1,31 @@
+
+  .card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+  }
+  .card-registration .select-arrow {
+  top: 13px;
+  }
+
+  .bg-indigo {
+  background-color: #4835d4;
+  border-radius: 0% 15% 15% 0%;
+  }
+
+
+  input.ng-invalid.ng-touched{
+    border: 1px solid red;
+  }
+
+  input.ng-valid.ng-touched{
+    border: 1px solid rgb(7, 216, 7);
+  }
+
+  p.help.is-danger{
+    margin-top: 10px;
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
+  }
