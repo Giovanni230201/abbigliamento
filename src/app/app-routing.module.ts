@@ -1,5 +1,4 @@
 import { RegistrazioneComponent } from './components/user/registrazione/registrazione.component';
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

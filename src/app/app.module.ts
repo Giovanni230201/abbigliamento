@@ -19,6 +19,8 @@ import { LoginComponent } from './components/user/login/login.component';
 import { RegistrazioneComponent } from './components/user/registrazione/registrazione.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
+
+
 @NgModule({
   declarations:[
     AppComponent,

@@ -16,11 +16,18 @@
 
 
   input.ng-invalid.ng-touched{
-    border: 1px solid red;
+    border: 3px solid red;
+  }
+
+  p.help.is-danger{
+    margin-top: -7px !important;
+    color: red;
+    font-size: 12px;
+    font-weight: 600;
   }
 
   input.ng-valid.ng-touched{
-    border: 1px solid rgb(7, 216, 7);
+    border: 3px solid rgb(7, 216, 7);
   }
 
   p.help.is-danger{
@@ -29,3 +36,30 @@
     font-size: 12px;
     font-weight: 600;
   }
+  .margintop {
+    margin-top: -124px;
+}
+
+  .sfondopagina{
+    background-image: url('../../../../assets/images/sfondocompletoReg.jpg');
+    size-adjust: 100%;
+  }
+
+  .sfondodiv2{
+    background-image: url('../../../../assets/images/sfondoReg1.jpg');
+    border-top-right-radius: 10% !important;
+    border-bottom-right-radius: 10% !important;
+    }
+
+    .sfondodiv{
+      background-image: url('../../../../assets/images/sfondoReg2.jpg');
+      border-top-left-radius: 10% !important;
+      border-bottom-left-radius: 10% !important;
+      padding-top: 120px !important;
+      }
+
+.input-text{
+  background-color: white;
+  opacity: 0.5;
+}
+
