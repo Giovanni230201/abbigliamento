@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,9 +16,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ProductCardComponent } from './shared/product-card/product-card.component';
 import { DetailComponent } from './components/products/detail/detail.component';
 import { ProductsListComponent } from './components/products/products-list/products-list.component';
-import { LoginComponent } from './components/user/login/login.component';
 import { RegistrazioneComponent } from './components/user/registrazione/registrazione.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { NewProductComponent } from './components/new-product/new-product.component';
 
 
 
@@ -32,8 +33,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     ProductCardComponent,
     DetailComponent,
     ProductsListComponent,
-    LoginComponent,
-    RegistrazioneComponent
+    RegistrazioneComponent,
+    NewProductComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +43,8 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
     MaterialExampleModule,
     NgbModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

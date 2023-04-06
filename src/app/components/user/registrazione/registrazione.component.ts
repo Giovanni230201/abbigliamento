@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { FormGroup,FormControl, Validators} from '@angular/forms';
 import { CustomValidator } from './custom.Validator';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PrimeNGConfig } from 'primeng/api';
+import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-registrazione',
@@ -8,6 +13,26 @@ import { CustomValidator } from './custom.Validator';
   styleUrls: ['./registrazione.component.scss']
 })
 export class RegistrazioneComponent {
+
+  utenteInserito: any;
+
+  constructor(
+    private modalService: NgbModal,
+    private userService: UserService,
+    private config: PrimeNGConfig,
+    private router: Router,
+    ){}
+
+
+  ngOnInit(): void {
+    this.config.setTranslation({
+      weak:'povera',
+      medium: 'forte',
+      strong: 'forte',
+      passwordPrompt: 'scrivi una password'
+    })
+  }
+
   form = new FormGroup({
     nome: new FormControl('', Validators.required),
     cognome: new FormControl('', Validators.required),
@@ -25,8 +50,33 @@ export class RegistrazioneComponent {
   [CustomValidator.MatchValidator('password', 'ripetiPassword')]
   )
 
+
   onSubmit(){
-    console.log(this.form.value);
+    const user = this.form.value;
+    this.userService.insertUser(user).pipe(take(1)).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.utenteInserito = res;
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
+
+    this.userService.datiUtente.next(user);
+    this.router.navigate(['home'])
   }
 
+
+
+
+open(content: any, titolo?: string){
+  let title = titolo;
+
+  this.modalService.open(content, { ariaLabelledBy: 'modale servizi', size: 'lg', centered: true}).result.then((res) => {
+    console.log('azione da eseguire' + title)
+  }).catch((res) => {
+    console.log('nessuna azione da eseguire')
+  });
+}
 }

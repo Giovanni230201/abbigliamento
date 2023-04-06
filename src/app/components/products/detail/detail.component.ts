@@ -21,7 +21,7 @@ export class DetailComponent implements OnInit{
     }
 
     onGetProduct(): void{
-      const id = Number(this.activatedRoute.snapshot.paramMap.get('_id'));
+      const id = this.activatedRoute.snapshot.paramMap.get('_id');
 
 
       this.productService.getProduct(id).subscribe({
@@ -37,9 +37,8 @@ export class DetailComponent implements OnInit{
     onGetProduct2(): void {
       this.activatedRoute.params.subscribe((parametriUrl) => {
         const id = parametriUrl['_id'];
-        const idNumerico = Number(id);
 
-        this.productService.getProduct(idNumerico).subscribe({
+        this.productService.getProduct(id).subscribe({
           next: (res) => {
             this.prodotto = res;
           },
