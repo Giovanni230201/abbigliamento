@@ -34,7 +34,7 @@ export class RegistrazioneComponent {
   }
 
   form = new FormGroup({
-    nome: new FormControl('', Validators.required),
+    name: new FormControl('', Validators.required),
     cognome: new FormControl('', Validators.required),
     email: new FormControl('',[Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.pattern(/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$/)]),
