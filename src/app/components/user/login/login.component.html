@@ -1,0 +1,20 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+<div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+  <h3>Inserisci le credenziali</h3>
+
+      <div class="inputBox">
+        <input  type="email" name="email" class="form-control" placeholder="Email" ngModel>
+         <input  type="password" name="password" class="form-control" placeholder="Password" ngModel>
+         </div>
+
+         <div>
+         <input type="submit" name="" value="Accedi">
+         <div class="alert" *ngIf="loginError"> {{loginError}}</div>
+</div>
+  <div class="text-center">
+      <p style="color: blueviolet;" routerLink="registrazione">Registrati</p>
+  </div>
+</div>
+</form>
+
+<p-toast position="bottom-right"></p-toast>

@@ -3,6 +3,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
+import * as ClassicEditorBuild from '@ckeditor/ckeditor5-build-classic';
+
 @Component({
   selector: 'app-new-product',
   templateUrl: './new-product.component.html',
@@ -31,6 +33,48 @@ export class NewProductComponent {
     price: new FormControl('', Validators.required ),
     published: new FormControl('', Validators.required),
   });
+
+  Editor = ClassicEditorBuild;
+
+  //Editor:any = Decoupled;
+
+  editorConfig = {
+    toolbar: {
+        items: [
+            'bold',
+            'italic',
+            'link',
+            'bulletedList',
+            'numberedList',
+            '|',
+            'indent',
+            'outdent',
+            '|',
+            'codeBlock',
+            'imageUpload',
+            'blockQuote',
+            'insertTable',
+            'undo',
+            'redo',
+        ]
+    },
+    image: {
+        toolbar: [
+            'imageStyle:full',
+            'imageStyle:side',
+            '|',
+            'imageTextAlternative'
+        ]
+    },
+    table: {
+        contentToolbar: [
+            'tableColumn',
+            'tableRow',
+            'mergeTableCells'
+        ]
+    },
+    height: 300,
+};
 
   ngOnInit(): void {
     this.prendiDatiProdotto();

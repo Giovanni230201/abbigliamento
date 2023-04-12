@@ -22,7 +22,7 @@
       <div class="justify-content-center">
         <ul>
         <li>
-        <h2 style="font-family: 'Dancing Script'; color: white; font-size: larger; font-size:60px; margin-top: 5%; margin-bottom: 5%;" >GD CLOTHING</h2>
+        <h2 style="font-family: 'Dancing Script'; color: white; font-size: larger; font-size:60px; margin-top: 5%; margin-bottom: 5%; margin-left: 44px;" >GD CLOTHING</h2>
         </li>
       </ul>
     </div>
@@ -57,7 +57,21 @@
               <i class="bi bi-patch-question icon"></i>
               <i class="bi bi-search icon"></i>
               <i routerLink="new-product" class="bi bi-database-fill-add icon"></i>
-              <a routerLink="registrazione" style="color: white;">Registrazione</a>
+              <!-- <a routerLink="registrazione" style="color: white;">Registrazione</a> -->
+
+
+              <li class="nav-item user" *ngIf="!authService.isLogged()" style="float: right;">
+                <a class="nav-link" routerLink="login"> <mat-icon class="align-self-center">person</mat-icon> Accedi</a>
+              </li>
+              <li class="nav-item user" *ngIf="authService.isLogged()" style="float: right;">
+                <div>
+                <mat-icon [ngClass]="authService.isLogged ? 'logged' : '' ">person</mat-icon><span class="name">Ciao {{user.name}}</span>
+                <div>
+                <a routerLink="profile" style="color: white; float:left ;margin-right: 19px;"> PROFILO</a>
+                <a class="nav-link" (click)="logout()"> Esci</a>
+                </div>
+                </div>
+              </li>
 
 
         </ul>
@@ -67,3 +81,4 @@
   </div>
 </nav>
 </header>
+

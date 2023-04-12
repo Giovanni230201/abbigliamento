@@ -1,0 +1,151 @@
+<!-- <div class="main-container">
+<div>
+  <h2>Ecco i tuoi dati</h2>
+
+  <ul>
+    <li>Nome: {{user.name}}</li>
+    <li>Email: {{user.email}} </li>
+    <li>Ruolo: {{user.role}}</li>
+    <li>Numero di telefono: {{user.numeroTelefono}}</li>
+    <li>Data di nascita: {{user.dataNascita}}</li>
+    <li>Strada: {{user.strada}}</li>
+    <li>Provincia: {{user.provincia}}</li>
+    <li>Cap: {{user.cap}}</li>
+    <li>Città: {{user.citta}}</li>
+    <li>Note aggiuntive: <span [innerHTML]="user.note ? user.note : 'nessuna nota'"></span> </li>
+    <li>Data di iscrizione: {{dataIscrizione}}</li>
+    <li>Ultima modifica dei dati: {{aggiornamento}}</li>
+  </ul>
+ </div>
+</div> -->
+
+
+<div class="container">
+        <div class="row gutters-sm">
+          <div class="col-md-4 mb-3">
+            <div class="card" style="border: none; border-radius: 24%;">
+              <div class="card-body" style="margin-top: 100px;">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
+                  <div class="mt-3">
+                    <h4>{{user.name}} {{user.cognome}}</h4>
+                    <p class="text-muted font-size-sm">{{user.strada}}, {{user.citta}}, {{user.provincia}}, {{user.cap}}</p>
+                    <button class="btn btn-primary">Modifica</button>
+                    <button routerLink="home" class="btn btn-outline-primary">Home</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-8">
+            <div class="card mb-3" style="border: none;border-radius: 16%;">
+              <div class="card-body" >
+                <div class="row">
+
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Nome e cognome</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.name}} {{user.cognome}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Ruolo</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.role}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Data di nascita</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.dataNascita}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Email</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.email}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Numero di telefono</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.numeroTelefono}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Numero di telefono fisso</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.numeroTelefonoFisso}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Residenza</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.strada}}, {{user.citta}}, {{user.provincia}}, {{user.cap}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Note aggiuntive</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{user.note}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Data di iscrizione</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{dataIscrizione}}
+                  </div>
+                </div>
+
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h6 class="mb-0">Ultima modifica</h6>
+                  </div>
+                  <div class="col-sm-9 text-secondary">
+                    {{aggiornamento}}
+                  </div>
+                </div>
+
+
+          </div>
+        </div>
+
+      </div>
+

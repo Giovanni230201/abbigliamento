@@ -5,6 +5,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 import { MaterialExampleModule } from 'src/material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -19,6 +20,12 @@ import { ProductsListComponent } from './components/products/products-list/produ
 import { RegistrazioneComponent } from './components/user/registrazione/registrazione.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NewProductComponent } from './components/new-product/new-product.component';
+import { PaginatorModule } from 'primeng/paginator';
+import { EsempioCombineComponent } from './components/esempio-combine/esempio-combine.component';
+import { ToastModule } from 'primeng/toast'
+import { LoginComponent } from './components/user/login/login.component';
+import { ProfileComponent } from './components/user/profile/profile.component';
+
 
 
 
@@ -34,7 +41,10 @@ import { NewProductComponent } from './components/new-product/new-product.compon
     DetailComponent,
     ProductsListComponent,
     RegistrazioneComponent,
-    NewProductComponent
+    NewProductComponent,
+    EsempioCombineComponent,
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +54,10 @@ import { NewProductComponent } from './components/new-product/new-product.compon
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    PaginatorModule,
+    ToastModule,
+    CKEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

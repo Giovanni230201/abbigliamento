@@ -21,6 +21,12 @@ html, body { height: 100%; }
   }
 }
 
+.descrizioneRicetta .ck-editor__editable{
+  min-height: 200px !important;
+  max-height: 200px !important;
+  max-width: 440px !important;
+}
+
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

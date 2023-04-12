@@ -3,6 +3,6 @@
   <div id="msg">
     <h3 *ngIf="titoloProdotto">{{titoloProdotto}}</h3>
   </div>
-  <app-product-card [products]="prodotti" (messaggio)="riceviMessaggio($event)"></app-product-card>
+  <app-product-card (messaggio)="riceviMessaggio($event)"></app-product-card>
   </div>
 

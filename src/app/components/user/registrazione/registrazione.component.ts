@@ -41,6 +41,7 @@ export class RegistrazioneComponent {
     ripetiPassword: new FormControl('', Validators.required),
     accetto: new FormControl('',Validators.requiredTrue),
     numeroTelefono: new FormControl('', Validators.required),
+    numeroTelefonoFisso: new FormControl(''),
     dataNascita: new FormControl('', Validators.required),
     strada: new FormControl(''),
     provincia: new FormControl(''),
