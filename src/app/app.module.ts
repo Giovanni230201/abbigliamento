@@ -21,10 +21,10 @@ import { RegistrazioneComponent } from './components/user/registrazione/registra
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NewProductComponent } from './components/new-product/new-product.component';
 import { PaginatorModule } from 'primeng/paginator';
-import { EsempioCombineComponent } from './components/esempio-combine/esempio-combine.component';
 import { ToastModule } from 'primeng/toast'
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';
+import { ResultComponent } from './components/user/result/result.component';
 
 
 
@@ -42,9 +42,9 @@ import { ProfileComponent } from './components/user/profile/profile.component';
     ProductsListComponent,
     RegistrazioneComponent,
     NewProductComponent,
-    EsempioCombineComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    ResultComponent
   ],
   imports: [
     BrowserModule,

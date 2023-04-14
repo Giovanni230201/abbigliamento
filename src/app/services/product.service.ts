@@ -13,6 +13,7 @@ export class ProductService {
 
   datiProdotto= new ReplaySubject;
   apiBaseUrl = 'api/products';
+  testoCercato= new ReplaySubject;
 
   constructor(private http: HttpClient) { }
 
@@ -29,5 +30,9 @@ export class ProductService {
 
   insertProduct(product: any): Observable<any>{
     return this.http.post<any>(`${this.apiBaseUrl}/`, product);
+  }
+
+  findProducts(text: string): Observable<any>{
+    return this.http.get<any>(`${this.apiBaseUrl}/cerca/${text}`);
   }
 }
