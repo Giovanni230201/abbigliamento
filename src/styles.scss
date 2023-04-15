@@ -21,12 +21,25 @@ html, body { height: 100%; }
   }
 }
 
-.descrizioneRicetta .ck-editor__editable{
+.descrizioneProdotto .ck-editor__editable{
   min-height: 200px !important;
   max-height: 200px !important;
   max-width: 440px !important;
+  width: 99%
 }
 
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: blueviolet!important;
+  border-color: black!important;
+  color: white!important;
+  font-size: 20px;
+}
+.p-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem blueviolet!important;
+}
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';

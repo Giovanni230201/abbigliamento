@@ -1,35 +1,44 @@
-nav{
-  margin-left: 10px;
-  li{
-    text-align: center;
-    list-style-type: none;
-  }
-}
-nav-right{
-  margin-right: 10px;
-  }
 
-
-.icona-abbigliamento {
-  width: 110px;
-  margin-right: 20px;
-  border-radius: 25px;
-  }
-
-.icon {
-    height: 20px;
-    width: 20px;
-    font-size: 25px;
-    padding-top: 2px;
-    color: white;
-    margin-right: 30px;
-    }
 
 
 header{
   background-color:blueviolet!important;
+  color: white;
+  font-family: cursive;
+  font-size: medium;
+
+  .imgTitolo{
+    margin-right: 200px;
+    .titolo{
+      font-family: 'Dancing Script';
+      color: white; font-size: larger;
+      font-size:20px;
+      margin-top: 10%;
+    }
+  .icona-abbigliamento {
+    width: 110px;
+    margin-right: 20px;
+    border-radius: 25px;
+    }
+  }
+
+    .link{
+      margin-top: 10px;
+      li{
+        a{
+          color: white;
+        }
+      }
+    }
+
+    .opzioniUtente{
+      margin-right: -128px;
+    }
+
 }
 
+
+//INIZIO CSS BOTTONI ESCI E PROFILO
 .btn {
   --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
   --border-width: .125em;
@@ -149,48 +158,121 @@ header{
 .btn:where(:hover, :focus) {
   color: #fff;
 }
+//FINE CSS BOTTONI
 
 
-.searchbar{
-  margin-bottom: auto;
-  margin-top: auto;
-  height: 60px;
-  background-color: #353b48;
-  border-radius: 30px;
-  padding: 10px;
+
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  margin-right: 150px;
+  margin-left: 15px;
+}
+
+.input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
+}
+
+
+@media only screen and (min-width: 0px ) and (max-width: 480px){
+  header{
+
+    .imgTitolo{
+      .titolo{
+        font-size:35px;
+        margin-top: 12%;
+      }
+    .icona-abbigliamento {
+      width: 160px;
+      margin-right: 100px;
+      margin-top: 20px;
+      }
+    }
+
+
+      .link{
+        li{
+          a{
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .input {
+        margin-left: 0px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+      }
+
+  }
+}
+
+@media only screen and (min-width: 480px ) and (max-width: 992px){
+  header{
+       text-align: center;
+    .imgTitolo{
+      margin-right: 20px;
+
+      .titolo{
+        margin-top:26px;
+        font-size:55px;
+      }
+
+    .icona-abbigliamento {
+      width: 220px;
+      }
+    }
+
+
+      .link{
+        li{
+          a{
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .input {
+        margin-left: 157px;
+      }
+
+  }
+}
+
+@media only screen and (min-width: 992px ) and (max-width: 1180px){
+
+  header{
+
+    .imgTitolo{
+      margin-right: 29px;
+      .titolo{
+      }
+    .icona-abbigliamento {
+      }
+    }
+
+      .link{
+        li{
+          a{
+            margin-top: 29px;
+          }
+        }
+      }
+
+      .input {
+        margin-right: 70px;
+        margin-top: 29px;
+      }
+
   }
 
-  .search_input{
-  color: white;
-  border: 0;
-  outline: 0;
-  background: none;
-  width: 0;
-  caret-color:transparent;
-  line-height: 40px;
-  transition: width 0.4s linear;
-  }
-
-  .searchbar:hover > .search_input{
-  padding: 0 10px;
-  width: 450px;
-  caret-color:red;
-  transition: width 0.4s linear;
-  }
-
-  .searchbar:hover > .search_icon{
-  background: white;
-  color: #e74c3c;
-  }
-
-  .search_icon{
-  height: 40px;
-  width: 40px;
-  float: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  color:white;
-  text-decoration:none;
-  }
+}

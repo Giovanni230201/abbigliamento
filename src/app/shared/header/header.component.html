@@ -1,87 +1,58 @@
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
   <div class="container-fluid" >
+
+
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <img src= "../assets/images/logoSitoAbbigliamento.png" class="icona-abbigliamento" style="margin-left: 0%;">
+      <ul class="navbar-nav imgTitolo">
+        <li class="nav-item imgTitle">
+          <img src= "../assets/images/logoSitoAbbigliamento.png" class="icona-abbigliamento">
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="home" style="color: white; margin-top: 20px;" > Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="prodotti" style="color: white; margin-top: 20px;"> Prodotti</a>
-        </li>
-        <li class="nav-item" style=" margin-top: 20px;" *ngIf="ruolo === 'admin' ">
-          <i routerLink="new-product" style="color: white; margin-top: 20px; margin-left: 5px;">Inserisci <br> Prodotto</i>
-        </li>
-
+        <li class="titolo">GD CLOTHING</li>
       </ul>
-    </div>
 
-    <div class="collapse navbar-collapse">
-      <div class="justify-content-center">
-        <ul>
+      <ul class="navbar-nav link">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home" > Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="prodotti" > Prodotti</a>
+        </li>
+        <li class="nav-item"  *ngIf="ruolo === 'admin' ">
+          <a class="nav-link" routerLink="new-product" >Inserisci Prodotto</a>
+        </li>
+
         <li>
-        <h2 style="font-family: 'Dancing Script'; color: white; font-size: larger; font-size:60px; margin-top: 5%; margin-bottom: 5%; margin-left: 44px;" >GD CLOTHING</h2>
+          <input class="input" type="search" name="" placeholder="Cerca prodotto..." [(ngModel)]="ricerca" (keyup.enter)="risultato()">
         </li>
+
+        <li class="nav-item user " *ngIf="!authService.isLogged()" style="float: right;">
+          <button class="btn" routerLink="login"> Accedi </button>
+       </li>
+
+
+
+       <li class="nav-item user " *ngIf="authService.isLogged()">
+
+         <span class="name">Ciao {{user.name}}</span>
+         <div>
+         <button routerLink="profile" class="btn"> PROFILO</button>
+         <button class="btn" (click)="logout()"> Esci</button>
+         </div>
+
+       </li>
+
       </ul>
 
-      <ul>
-        <!-- <li>
-          <input type="search" class="search-form" [(ngModel)]="ricerca" (keyup.enter)="risultato()">
-          <button routerLink="/cerca" class="search"  (click)="risultato()">
-            <mat-icon >search</mat-icon>
-              </button>
-
-        </li> -->
-          <li>
-           <div class="searchbar">
-            <input class="search_input" type="search" name="" placeholder="Cerca prodotto..." [(ngModel)]="ricerca" (keyup.enter)="risultato()">
-            <a routerLink="/cerca" class="search_icon" (click)="risultato()"><i class="bi bi-search"></i></a>
-           </div>
-          </li>
-
-      </ul>
-    </div>
-  </div>
-
-
-
-
-      <div class="collapse navbar-collapse" class="nav-right" >
-         <div class="justify-content-end" style="margin: 20px;">
-
-          <ul style="color: white; font-size: medium; font-family: cursive;">
-
-
-
-              <li class="nav-item user" *ngIf="!authService.isLogged()" style="float: right;">
-                 <button class="btn" routerLink="login"> Accedi </button>
-              </li>
-              <li class="nav-item user" *ngIf="authService.isLogged()" style="float: right;">
-                <div>
-                <mat-icon [ngClass]="authService.isLogged ? 'logged' : '' ">person</mat-icon><span class="name">Ciao {{user.name}}</span>
-                <div>
-                <button routerLink="profile" class="btn"> PROFILO</button>
-                <button class="btn" (click)="logout()"> Esci</button>
-                </div>
-                </div>
-              </li>
-
-
-
-
-        </ul>
-
-
-      </div>
     </div>
 
-  </div>
+
+    </div>
+
 </nav>
 </header>
 

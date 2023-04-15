@@ -98,3 +98,13 @@ body{margin: 0;
           p{
           color: #0000ff
           }
+
+
+
+@media only screen and (min-width:0px) and (max-width:480px){
+  .loginBox{
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 21px;
+}
+}

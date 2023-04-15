@@ -1,11 +1,19 @@
-<div *ngIf="prodotto, else prodotto_non_trovato">
-  <img background [src]="prodotto.image" class="image">
-<div class="main-detail" >
+<div class="dettaglio" *ngIf="prodotto, else prodotto_non_trovato">
+
   <h3 class="title">{{prodotto.title}}</h3>
+
+
+  <div class="contenitore-img" >
+  <img background [src]="prodotto.image" class="image">
+</div>
+
+<div class="main-detail" >
  <h2 class="description">{{prodotto.description}}</h2>
  <h2 class="prezzo">Price :  {{prodotto.price | currency: 'EUR' }}</h2>
 </div>
+
 </div>
+
 
 <ng-template #prodotto_non_trovato>
   <div id="prodotto_non_trovato">

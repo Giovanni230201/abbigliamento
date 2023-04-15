@@ -1,49 +1,10 @@
-// .card-container{
-//   display: block;
-//   float: left;
-//   width: 23%;
-//   margin-left: 1.5%;
-//   margin-bottom: 20px;
-// }
-// .card {
-//   border-top-right-radius: 9%;
-//   border-top-left-radius: 9%;
-//   background-color: rgba(137, 43, 226, 0.358);
-//   color: black;
-// }
-
-// .card-text{
-//   margin-top: -5%;
-// }
-
-// .card-image{
-//   height: 500px;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   border-radius: 10%;
-// }
-
-// .card-body{
-//   text-align: center;
 
 
-//   .card-title{
-//     font-weight: 900;
-//     font-size: 16px;
-//     color: black;
-//   }
-//  }
-
-
-
-//   a.btn.btn-primary{
-//     background-color: blueviolet;
-//     border: none;
-//     margin: auto;
-//     padding: 10px 35px;
-//   }
-
+//per pagina home
+.container-cards{
+  margin-left: -10px;
+  margin-right: -32px;
+}
 
 .card {
     width: 19em;
@@ -56,7 +17,8 @@
     display: flex;
     flex-direction: column;
     float: left;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .card span {
@@ -75,6 +37,7 @@
   font-size: 0.72em;
   margin: 1em;
 }
+
 .contenitore-immagine{
 
     margin-bottom: 23px;
@@ -95,16 +58,6 @@
   }
 }
 
-
-// .img{
-//     width: 70%;
-//     height: 45%;
-//     margin-left: 15%;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     margin-top: 5%;
-// }
 
 .card .share {
   margin-top: 1em;
@@ -151,6 +104,23 @@
 }
 
 
+
+
+
+@media only screen and (min-width:0px) and (max-width:480px){
+.container-cards{
+  margin-left: 58px;
+}
+// .card{
+//   margin-bottom: 10px;
+// }
+}
+
+// @media only screen and (min-width:481px) and (max-width:768px){
+//   .card{
+//     margin-bottom: 10px;
+//   }
+// }
 
 
 

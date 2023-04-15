@@ -1,24 +1,111 @@
 
 
-.icona-footer{
-  margin-right: 40px;
-  border-radius: 30%;
-  width: 300px;
-}
+// .icona-footer{
+//   margin-right: 40px;
+//   border-radius: 30%;
+//   width: 300px;
+// }
 
-footer{
+// footer{
+//   background-color: blueviolet;
+//   float: left;
+//   width: 100%;
+//   height: 70%;
+//   margin-top: 30px;
+//   padding: 16px;
+// }
+
+// .copyright{
+//     height: 50px;
+//     margin-top: 48px;
+//     width: 500px;
+//     text-align: end;
+// }
+
+
+.footer{
   background-color: blueviolet;
   float: left;
   width: 100%;
-  height: 70%;
   margin-top: 30px;
   padding: 16px;
-}
+  color: white;
 
-.copyright{
-    height: 50px;
-    margin-top: 48px;
-    width: 500px;
-    text-align: end;
+  .newsSocial{
+
+    width: 100%;
+    float: left;
+
+    .newsletter{
+      width: 50%;
+      float: left;
+      margin-top: -1%;
+      margin-bottom: 3%;
+
+      .button-newsletter{
+       margin-top: 24px;
+       margin-left: 10px;
+       background: white;
+       color: blueviolet;
+       font-weight: bold;
+      }
+   }
+
+   .social-media{
+    width: 50%;
+    float:right;
+
+      h2{
+        font-weight: bold;
+        float: left;
+      }
+
+      a{
+        float: left;
+      }
+   }
+
+
+  }
+
+  .payment{
+    clear: both;
+    width: 55%;
+    margin-left: 22.5%;
+
+    h2{
+      float:left;
+    }
+   }
+
+
+
+  .altro{
+    clear: both;
+
+    .immagine{
+      width: 33.3%;
+      text-align: center;
+
+      img {
+        border-radius: 28%;
+        width: 200px;
+        height: 100px;
+      }
+
+     }
+
+    .sitemap{
+      width: 33.3%;
+      text-align: center;
+    }
+
+    .contatti{
+      text-align: center;
+    }
+
+
+
+   }
 }
 

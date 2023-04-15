@@ -1,44 +1,87 @@
 
-.main-detail{
-  color: black;
+// .main-detail{
+//   color: black;
+//   width: 100%;
+//   height: 100%;
+
+// }
+
+// .prezzo{
+//   text-align: end;
+//   font-size: xx-large;
+//   font-family: fantasy;
+//   font-style: unset;
+// }
+// // .image{
+// //    width: 300px;
+// //    float: left;
+// //    border: 10%;
+// //    border-radius: 20%;
+// // }
+
+// #prodotto_non_trovato{
+//   height: 70vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .description{
+//   margin-top: 50px;
+// text-align: center;
+//   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+//   color: black !important;
+//   font-size: xx-large;
+// }
+
+.dettaglio{
+
   width: 100%;
-  height: 100%;
+  height: auto;
+
+  .title{
+    margin-top: 34px;
+    text-align: center;
+    font-size: 85px;
+    color: black;
+    font-family: 'Dancing Script';
+    margin-bottom: 4%;
+  }
+
+  .contenitore-img{
+      width: 40%;
+      height: auto;
+      float: left;
+
+      .image{
+        width: 600px;
+        margin-top: auto;
+      }
+  }
+
+  .main-detail{
+       width: 45%;
+      height: auto;
+      float: right;
+
+      .description{
+          font: 500 19px/27px Roboto, sans-serif;
+          letter-spacing: .0125em;
+          margin: 0 0 16px;
+      }
+
+      .prezzo{
+          font-size: xxx-large;
+          font-family: ui-serif;
+          text-align: center;
+      }
+
+  }
 
 }
 
-.prezzo{
-  text-align: end;
-  font-size: xx-large;
-  font-family: fantasy;
-  font-style: unset;
-}
-.image{
-   width: 300px;
-   float: left;
-   border: 10%;
-   border-radius: 20%;
-}
 
-#prodotto_non_trovato{
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.description{
-  margin-top: 50px;
-text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-  color: black !important;
-  font-size: xx-large;
-}
 
-.title{
-  margin-top: 50px;
-  text-align: center;
-  font-size: 85px;
-  color: black;
-  font-family: 'Dancing Script';
-}
+
 
