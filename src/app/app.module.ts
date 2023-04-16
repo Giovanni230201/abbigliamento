@@ -20,7 +20,7 @@ import { ProductsListComponent } from './components/products/products-list/produ
 import { RegistrazioneComponent } from './components/user/registrazione/registrazione.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { NewProductComponent } from './components/new-product/new-product.component';
-import { PaginatorModule } from 'primeng/paginator';
+import { PaginatorModule } from 'primeng/paginator'
 import { ToastModule } from 'primeng/toast'
 import { LoginComponent } from './components/user/login/login.component';
 import { ProfileComponent } from './components/user/profile/profile.component';

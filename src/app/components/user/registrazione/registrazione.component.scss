@@ -1,4 +1,18 @@
 
+.titolo{
+  text-align: center;
+  font-size: 35px;
+  font-family: Dancing Script;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+
+.card, .card-registration, .card-registration-2{
+  border-radius: 10%;
+  border-color: transparent;
+}
+
+
   .card-registration .select-input.form-control[readonly]:not([disabled]) {
   font-size: 1rem;
   line-height: 2.15;
@@ -56,6 +70,58 @@
 
 .input-text{
   background-color: white;
-  opacity: 0.3;
+  color: black;
+  opacity: 0.8;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 600px){
+
+  .card, .card-registration, .card-registration-2{
+    border-radius: 0%;
+  }
+
+  .titolo{
+    font-size: 20px;
+     margin-top: 20px;
+  }
+
+  .sfondodiv2{
+    border-top-right-radius: 0% !important;
+    border-bottom-right-radius: 0% !important;
+    }
+
+    .sfondodiv{
+      border-top-left-radius: 0% !important;
+      border-bottom-left-radius: 0% !important;
+      }
+
+  .input-text{
+  }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 995px){
+
+  .card, .card-registration, .card-registration-2{
+    border-radius: 0%;
+  }
+
+  .titolo{
+    font-size: 25px;
+     margin-top: 20px;
+  }
+
+  .sfondodiv2{
+    border-top-right-radius: 0% !important;
+    border-bottom-right-radius: 0% !important;
+    }
+
+    .sfondodiv{
+      border-top-left-radius: 0% !important;
+      border-bottom-left-radius: 0% !important;
+      }
+
+
 }
 

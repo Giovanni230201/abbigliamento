@@ -73,8 +73,7 @@ header{
   transition: color 250ms;
 }
 
-.btn::after,
-.btn::before {
+.btn::after, .btn::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -248,7 +247,7 @@ header{
   }
 }
 
-@media only screen and (min-width: 992px ) and (max-width: 1180px){
+@media only screen and (min-width: 992px ) and (max-width: 1286px){
 
   header{
 
@@ -273,6 +272,11 @@ header{
         margin-top: 29px;
       }
 
+  }
+
+  .accedi{
+      margin-left: 80px;
+      margin-top: 24px;
   }
 
 }

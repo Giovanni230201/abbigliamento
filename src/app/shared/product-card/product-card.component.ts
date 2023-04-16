@@ -19,7 +19,7 @@ export class ProductCardComponent implements OnInit, OnDestroy  {
 
   prodottiTotali: number;
   page=1;
-  prodottiPerPagina=5;
+  prodottiPerPagina=4;
   prodotti: Product[];
   ruolo: any;
   loading=true;
